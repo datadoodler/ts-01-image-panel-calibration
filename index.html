@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://localhost:8001/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../prism.css"/>
+
+    <link rel="stylesheet" href="image-order.css"/>
+</head>
+<body ng-app="app" ng-controller="ctrl" style="padding-left:20px">
+
+<h2>Calibrate Camera Locations</h2>
+<div class="row">
+    <div class="col-sm-8">
+        <div class="image-order-canvass">
+
+            <img src="car.png" class="image-order-car" alt="">
+
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="front-left"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="front-middle"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="front-right"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="side-right"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="back-right"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="back-middle"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="back-left"></target>
+            <target clicktarget="clickTarget(position)" selectedimage="selectedImage" position="side-left"></target>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-sm-4" >Click a Source, then click a camera location
+        <div class="image-order-control-panel">
+                <images-list-image updateslot="updateSlot(slotId,src)" clickimage="clickImageList(src)" src="./image0.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image1.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image2.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image3.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image4.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image5.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image6.jpg" ></images-list-image>
+                <images-list-image clickimage="clickImageList(src)" src="./image7.jpg" ></images-list-image>
+        </div>
+    </div>
+</div>
+
+
+<h2>Order</h2>
+<div class="slot-container">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+    <img src="{{slots[0].src}}" alt="{{slots[0].src}}">
+</div>
+
+
+<script src="../prism.js"></script>
+
+
+<script src="http://localhost:8001/bower_components/angular/angular.js"></script>
+<script src="http://localhost:8001/bower_components/angular-resource/angular-resource.js"></script>
+<script src="http://localhost:8001/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="http://localhost:8001/bower_components/angular-animate/angular-animate.js"></script>
+<script src="http://localhost:8001/bower_components/angular-touch/angular-touch.js"></script>
+<script src="http://localhost:8001/bower_components/angular-route/angular-route.js"></script>
+<script src="http://localhost:8001/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="http://localhost:8001/bower_components/angular-bootstrap-confirm/dist/angular-bootstrap-confirm.js"></script>
+<script src="http://localhost:8001/bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="http://localhost:8001/bower_components/angulartics/src/angulartics.js"></script>
+<script src="http://localhost:8001/bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+<script src="http://localhost:8001/bower_components/angular-prompt/dist/angular-prompt.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-core/core.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-components/components.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-resource/resource.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-notify/notify.js"></script>
+<script src="http://localhost:8001/bower_components/AngularJS-Toaster/toaster.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-notify-toaster/notify-toaster.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-security/security.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-security-manager/security-manager.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-diagnostics/diagnostics.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-reporting/reporting.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-job/job.js"></script>
+<script src="http://localhost:8001/bower_components/angular-ui-grid/ui-grid.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-grid/grid.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-data-source/data-source.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-themes/themes.js"></script>
+<script src="http://localhost:8001/bower_components/transcend-app/app.js"></script>
+
+
+<script src="app.js"></script>
+<script src="target/target.directive.js"></script>
+<script src="images-list/imageslist-image.directive.js"></script>
+
+</body>
+</html>

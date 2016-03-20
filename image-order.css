@@ -1,0 +1,104 @@
+.image-order-control-panel {
+    position: inherit;
+    background-color: #626332;
+    padding: 1rem;
+    width: 270px;
+    border-radius: 15px;
+}
+
+.image-in-container {
+    display: inline-block;
+    background-color: lightYellow;
+    padding-bottom:2px;
+    width: 100px;
+    margin: 1rem;
+    font-size:xx-small;
+    color:grey;
+}
+
+.image-in-container > img {
+    width: 100%;
+
+}
+
+.targetImage{
+    height:100%;/
+}
+.image-order-canvass {
+    background-color: white;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.image-order-camera {
+    display: inline-block;
+    height: 23%;
+    width: 18%;
+    background-color: #e0e0e0;
+    position: inherit;
+}
+
+.image-order-car {
+    position: relative;
+    width: 20%;
+    left: 38%;
+    top: 32%;
+    height: 40%;
+    opacity: .2;
+}
+
+.front-left {
+    top: 15%;
+    left: 10%;
+}
+
+.front-middle {
+    top: 5%;
+    left: 40%;
+}
+
+.front-right {
+    top: 15%;
+    left: 68%;
+}
+
+.side-right {
+    top: 40%;
+    left: 68%;
+}
+
+.back-right {
+    top: 65%;
+    left: 68%;
+}
+
+.back-middle {
+    top: 75%;
+    left: 40%;
+}
+
+.back-left {
+    top: 65%;
+    left: 10%;
+}
+
+.side-left {
+    top: 40%;
+    left: 10%;
+}
+
+.slot-container{
+    position:relative;
+    display:inline-block;
+    height:130px;
+    background-color:silver;
+    border:1px solid gray;
+    min-width:120px;
+}
+.slot-container > img {
+    height:100%;
+    width:128px;
+    border:none;
+}
